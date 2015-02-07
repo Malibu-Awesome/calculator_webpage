@@ -19,6 +19,9 @@ var main = function() {
 
     window.setTimeout(showdate, 1000);
   };
+  //get the gross income
+  var grossIncome = document.getElementsByName("grossIncome");
+
 };
 
 // tellcolor.addEventListener("click", clickcolor, false);
