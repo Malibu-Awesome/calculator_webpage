@@ -1,0 +1,108 @@
+// @import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
+// @import url(http://fonts.googleapis.com/css?family=Lobster);
+// @import url(http://fonts.googleapis.com/css?family=Cabin);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+@mixin font{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.1em  ;
+  color: hsla(198, 95%, 85%, 0.84);
+  line-height: 115%;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  background-image: url("blue_blured_gradient_background-HD.jpg"); }
+
+main {
+  width: 80%;
+  height: 1000px;
+  margin-left: 10%;
+  margin-top: -1%;
+  margin-bottom: -1%;
+  background-color: rgba(255, 255, 255, 0.15); }
+
+nav {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: center; }
+  nav h1, nav a {
+    display: inline;
+    font-size: 3em;
+    font-family: "Molengo", Georgia, Times, serif;
+    color: rgba(255, 255, 255, 0.5); }
+  nav span {
+    display: inline-block;
+    transform: rotateZ(20deg);
+    -webkit-animation: shake 2s linear infinite;
+    -moz-animation: shake 2s linear infinite;
+    animation: shake 2s linear infinite;
+    color: inherit; }
+
+/*section*/
+section{
+  width: 96%;
+  height: 200px;
+
+  background-color: transparent;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 1%;
+  margin: 1%;
+  @include font;
+}
+/*form*/
+form{
+  @include font;
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-flow: column nowrap;
+  ul{
+    list-style-type: none;
+    width:90%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+  input[type = "submit"]{
+    width: 100px;
+    height:50px;
+    margin-left: calc(50% - 50px);
+  }
+}
+/*result*/
+aside{
+  @include font;
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-flow: column nowrap;
+  ul{
+    list-style-type: none;
+    width:90%;
+    // display:flex;
+    // flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+}
+/*map*/
+div{
+  img{
+    width: 100%;
+    height: 100%;}
+}
+
+form ul {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-block; }
+
+/*# sourceMappingURL=index.css.map */
